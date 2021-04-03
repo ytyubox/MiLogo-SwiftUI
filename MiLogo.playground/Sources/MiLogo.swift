@@ -11,7 +11,8 @@ public struct MiLogo: View {
             .font(Font.custom("Babylon Industrial", size: 14))
             .padding(10)
             .frame(width: 40, height: 40)
-            .background(SuperEllipse(n: n).fill(Color.white))
+            .background(Color.white)
+            .clipShape(SuperEllipse(n: n))
     }
 }
 
